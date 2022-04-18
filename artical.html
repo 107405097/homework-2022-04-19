@@ -1,0 +1,320 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .mobile-block {
+            width: 375px;
+            background-color: #f1f1f1;
+            padding-bottom: 20px;
+        }
+
+        /*--header--*/
+        header {
+            padding: 20px;
+        }
+
+        header .logo,
+        header .ham {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        header .logo {
+            width: calc(375px - 40px - 34px);
+        }
+
+        .logo img {
+            width: 219px;
+        }
+
+        .ham>div {
+            width: 28px;
+            height: 3px;
+            background-color: #c71b0A;
+            margin-bottom: 9px;
+
+            /*--置右--*/
+            text-align: right;
+            margin-right: auto;
+
+        }
+
+        .ham>div:last-child {
+            margin-bottom: 0px;
+        }
+
+        /*--title--*/
+        .title {
+            padding: 0px;
+            text-align: left;
+
+            font-weight: bold;
+            line-height: 50px;
+        }
+
+        h2 {
+            height: 45px;
+            margin-bottom: 0px;
+            margin-left: 32px;
+            margin-right: 17px;
+
+            font-size: 16px;
+            color: #000000;
+        }
+
+        h1 {
+            height: 150px;
+            margin-top: 0px;
+            margin-bottom: 34px;
+            margin-left: 25px;
+            margin-right: 24px;
+
+            font-size: 34px;
+            color: #404040;
+        }
+
+        /*--hero-image--*/
+        .hero-image img {
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 375px;
+        }
+
+        .hero-image figcaption {
+            width: 360px;
+            height: 78.04px;
+            text-align: left;
+            margin-top: 20.64px;
+            margin-left: 8px;
+            margin-right: auto;
+            margin-bottom: 74.96px;
+
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 20px;
+            color: #808080;
+
+            border: 0px;
+        }
+
+        /*--metadata--*/
+        .metadata {
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .metadata .top-seperate-line {
+            height: 15px;
+            border-top: solid 1px #d0d0d0;
+            border-right: solid 1px #d0d0d0;
+        }
+
+        .metadata .bottom-seperate-line {
+            height: 15px;
+            margin-bottom: 23px;
+            border-bottom: solid 1px #d0d0d0;
+            border-right: solid 1px #d0d0d0;
+        }
+
+        .metadata .category {
+            text-align: left;
+            margin-left: 9px;
+            margin-bottom: 17px;
+
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 21.79px;
+            color: #a67a44;
+        }
+
+        .metadata .published-time {
+            text-align: left;
+
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 20px;
+            color: #808080;
+        }
+
+        .metadata .bottons {
+            margin-top: 45px;
+        }
+
+        .metadata .bottons div {
+            display: inline-block;
+            width: auto;
+            height: 33px;
+            padding-top: 6px;
+            padding-bottom: 7px;
+            padding-left: 11px;
+            padding-right: 13px;
+
+            border: solid 1px #808080;
+            border-radius: 30px;
+
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 20px;
+            color: #808080;
+        }
+
+        .metadata .toolbox {
+            width: 300px;
+            height: 36px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 84px;
+            vertical-align: middle;
+        }
+
+        .toolbox img {
+            width: 36px;
+            margin-right: 10px;
+        }
+
+        .toolbox img:last-of-type {
+            margin-right: 0px;
+        }
+
+        /*--paragraph--*/
+        p {
+            margin: 40px 40px 40px 37px;
+            text-align: left;
+
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 40px;
+            color: #404040;
+        }
+
+        p span {
+            color: #a67a44;
+        }
+
+        .highlighted p {
+            margin: 0px;
+            padding: 14px 40px 22px 37px;
+
+            background-color: #FFFFFF;
+        }
+
+
+        /*--figure--*/
+        img {
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 375px;
+        }
+
+        img+figcaption {
+            width: 235px;
+            height: 78.04px;
+            text-align: left;
+            margin: 15px 15px 15px 125px;
+
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 20px;
+            color: #999999;
+
+            border-bottom: solid 1px #d0a670;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobile-block">
+        <!--header-->
+        <header>
+            <!--logo-->
+            <div class="logo">
+                <img src="https://github.com/nickhsine/teach-at-nccu/raw/master/assets/icons/twreporter-logo.svg">
+            </div>
+
+            <!--hamburger-->
+            <div class="ham">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+
+        <!--title-->
+        <div class="title">
+            <h2>Reporter Saturday Features</h2>
+            <h1>【山思而行】登山中的死亡，對生命的凝視</h1>
+        </div>
+
+        <!--hero-image-->
+        <div class="hero-image">
+            <img src="https://www.twreporter.org/images/20200214133514-05611004a1d3a72fe4c955027f2d4c33-desktop.jpg">
+            <figcaption>登上山峰之途，就是在死亡的陰影之下，動用自身全部的感官與技藝，設法避開那些遭致危機的陷阱。圖為2016年2月，一支國際登山隊正跨越珠穆朗瑪峰基地營附近的冰川。（攝影／AP／Tashi
+                Sherpa／達志影像）</figcaption>
+        </div>
+
+        <!--metadata-->
+        <div class="metadata">
+            <div class="top-seperate-line"></div>
+            <div class="category">環境・教育</div>
+            <div class="top-seperate-line"></div>
+            <div class="published-time">刊出日期 2020/2/28</div>
+            <div class="bottons">
+                <div>#體育</div>
+                <div>#山思而行</div>
+            </div>
+            <div class="bottom-seperate-line"></div>
+            <!--toolbox-->
+            <div class="toolbox">
+                <img src="https://github.com/nickhsine/teach-at-nccu/raw/master/assets/icons/add-bookmark-mobile.svg">
+                <img src="https://github.com/nickhsine/teach-at-nccu/raw/master/assets/icons/tool-text.svg">
+                <img src="https://github.com/nickhsine/teach-at-nccu/raw/master/assets/icons/tool-print.svg">
+                <img src="https://github.com/nickhsine/teach-at-nccu/raw/master/assets/icons/share-line.svg">
+                <img src="https://github.com/nickhsine/teach-at-nccu/raw/master/assets/icons/share-fb.svg">
+                <img src="https://github.com/nickhsine/teach-at-nccu/raw/master/assets/icons/share-twitter.svg">
+            </div>
+        </div>
+
+        <!--paragraph-->
+        <div>
+            <p>講到登山，普遍的印象可能是壯闊的山景，雲海朝霞萬丈金芒；也可能是山上人與人之間的情誼，過地形時伸手扶一把，或濕冷雨天一碗熱呼呼的泡麵。我們在山中感受生命各種美好，汲取養分。就算是逆境，痛苦會過去，美會留下，回到人間後依舊能量滿滿再度出發。
+            <p>
+            <p>做為人，不知為何，我們傾向記憶美好，卻遺忘過程的苦痛。但我卻想，這是否讓我們理解、記憶一件事情性質的方式，也隨之產生偏誤？</p>
+            <p>我想說的是，登山是件會死人的運動。
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" transform="rotate(90 10 10)" fill="white" />
+                    <path d="M10 15L5.66987 7.5L14.3301 7.5L10 15Z" fill="#D0A67D" />
+                </svg>
+            </p>
+
+        </div>
+        <div class="highlighted">
+            <p>某程度上，登上山巔之途，就是在死亡的陰影之下，動用自身全部的感官與技藝，設法避開那些遭致危機的陷阱。這樣的經驗本身，就是一種回報，高處的風景與抵達最高點的滿足，則是額外的嘉獎。</p>
+        </div>
+        <div>
+            <p>那是個風和日麗的早晨，我跟阿果從標高5,600公尺的馬卡魯峰前進基地營帳篷中醒來。我倆前一天剛攀升至7,150公尺處進行適應攀登並下山，往後一週將是一系列壞天氣週期的到來，所以我們正準備迎接休息日的放鬆作息。
+            <p>
+            <p>慢慢踱進餐廳帳，吃完千篇一律的鬆餅加煎蛋，正想放個音樂泡杯咖啡，這時外面有人叫我。是Lakpa。</p>
+            <p>Lakpa是隔壁營區的商業團"Pioneer Adventure"的老闆，今年除了我跟阿果，馬卡魯峰這裡還有同樣來自台灣的登山者<span>三條魚</span>，她就在這個隊伍中。</p>
+            <p>原本以為Lakpa是來約我們晚上去他們隊上吃個飯之類的，興高采烈的走出去跟他打招呼，沒想到他表情挺嚴肅：</p>
+        </div>
+
+        <!--figure-->
+        <div>
+            <img src="https://www.twreporter.org/images/20200214133536-860474831449c5e95fab1b3d7c98b3ad-tablet.jpg">
+            <figcaption>2017年3月，一隊登山者朝向尼泊爾羅布崎的登山營地前進。（攝影／AP／Tashi Sherpa／達志影像）</figcaption>
+        </div>
+    </div>
+</body>
+
+</html>
